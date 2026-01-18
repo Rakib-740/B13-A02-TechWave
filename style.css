@@ -17,6 +17,23 @@
     background-color: #1A0B2E;
 }
 
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 10000px;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
 /* Main style */
 
 /* Navbar design */
@@ -56,7 +73,6 @@
     line-height: 120%;
     color: #FFFFFF;
 }
-
 
 
 /*  Banner design */
@@ -114,9 +130,9 @@
     font-weight: 600;
     line-height: 22px;
     color: #1A0B2E;
-    position: relative;
-    top: -150px;
-    right: -490px;
+    position: absolute;
+    top: 1px;
+    right: 2px;
     z-index: 2;
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
 }
@@ -149,3 +165,41 @@
     margin-bottom: 24px;
 }
 
+.banner-btn{
+    display: flex;
+    gap: 8px;
+}
+.b-transparent{
+    border: 1px solid rgba(0, 255, 136, 1);
+    background: transparent;
+    color: rgba(0, 255, 136, 1);   
+}
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .hidden{
+        display: contents;
+    }
+    .hidden-nav{
+        display: none;
+    }
+    .navbar{
+        margin: 20px;
+    }
+    .banner{
+        /* max-width: 400px; */
+        background-size: 100%;
+    }
+    .banner .banner-container{
+        width: 400px;
+        padding: 40px 20px;
+    }
+    .banner .banner-container .center-circle .banner-circle{
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+    }
+}
