@@ -387,6 +387,105 @@
     align-items: center;
     gap: 6px;
 }
+.host-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 120px 0px;
+}
+.host-container .host-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.host-content{
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+    align-items: center;
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+}
+.host-description{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.host-description h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 39px;
+}
+.host-description p{
+    opacity: 0.6;
+    color: #FFFFFF;
+    line-height: 24px;
+}
+.host-socials{
+    display: flex;
+    gap: 8px;
+}
+.host-socials a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(83, 60, 114, 1);;
+    padding: 10px;
+    border-radius: 50%;
+}
+.host-socials a img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* Footer styles */
+footer{
+    background: url("./assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.footer-social{
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.footer-social a{
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.footer-social p {
+    font-weight: 500;
+    line-height: 19px;
+    opacity: 0.6;
+}
+.footer-copy{
+    color: #FFFFFF;
+    line-height: 24px;
+    opacity: 0.6;
+}
 
 /* Responsive Mobile design */
 @media screen and (max-width: 576px) {
@@ -419,7 +518,8 @@
     }
 
     .about-container {
-        max-width: 440px;
+        max-width: 100%;
+        padding: 0 20px;
     }
 
     .about-content h1 {
@@ -442,8 +542,8 @@
     }
 
     .why-choose-container {
-        max-width: 400px;
-        padding: 40px 0;
+        max-width: 100%;
+        padding: 40px 20px;
         /* margin: 0px 20px; */
     }
 
@@ -476,7 +576,8 @@
 
     /* youtube episodes */
     .featured-container {
-        padding: 40px 10px;
+        max-width: 100%;
+        padding: 40px 20px;
     }
     .featured-container>h1 {
         font-size: 2rem;
@@ -492,5 +593,50 @@
     }
     .youtube-card-content h1{
         font-size: 1.25rem;
+    }
+
+    /* host responsive */
+    .host-container{
+        max-width: 100%;
+        padding: 0 20px;
+        padding-bottom: 40px;
+    }
+    .host-container .host-heading{
+        font-size: 2rem;
+        margin-bottom: 24;
+    }
+    .host-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .host-description h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .host-socials{
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* footer responsive */
+    footer{
+        background-size: 100%;
+    }
+    .footer-container{
+        max-width: 400px;
+        padding: 40px 0;
+    }
+    .footer-container img{
+        width: 50%;
+    }
+    .footer-social{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        width: 100%;
+        justify-items: center;
     }
 }
